@@ -1,7 +1,7 @@
 // Lets Run this From Github
 
 pipeline {
-    agent none
+    agent { label 'jenkins-slave' }
     stages {
           stage('Functionize-CLI') {
           agent {
